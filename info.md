@@ -1,6 +1,6 @@
-| Note: This is actually a sub-problem of "Assymptotic Solutions to Random Fixed Points Equations and Financial Network"
+| Note: This is a sub-problem of "Assymptotic Solutions to Random Fixed Points Equations and Financial Network"
 
-**Financial Network Generator & Structural Risk Analyzer**
+# Financial Network Generator & Structural Risk Analyzer**
 
 Your core objective will be to write a Python module that builds realistic interbank network topologies, models debt/liability flow using matrix algebra, and analyzes structural vulnerabilities (like finding which banks are "too connected to fail").
 
