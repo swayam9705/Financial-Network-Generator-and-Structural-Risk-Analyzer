@@ -1,0 +1,95 @@
+.network-graph {
+    position: relative;
+    flex: 1;
+    background-color: #000000;
+    border-right: 1px solid #ffffff;
+    overflow: hidden;
+    user-select: none;
+}
+
+.network-graph__legend {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    gap: 16px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 8px 12px;
+    z-index: 10;
+}
+
+.network-graph__legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.network-graph__badge {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+}
+
+.network-graph__badge--core {
+    background-color: #ffffff;
+}
+
+.network-graph__badge--periphery {
+    background-color: #000000;
+}
+
+.network-graph__badge--defaulted {
+    background-color: #ffffff;
+    outline: 2px solid #ffffff;
+}
+
+.network-graph__svg {
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+}
+
+.network-graph__edge {
+    stroke: #333333;
+    stroke-width: 1px;
+}
+
+.network-graph__node-group {
+    cursor: grab;
+}
+
+.network-graph__node-group:active {
+    cursor: grabbing;
+}
+
+.network-graph__node {
+    fill: #000000;
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+}
+
+.network-graph__node--core {
+    fill: #222222;
+    stroke-width: 2px;
+}
+
+.network-graph__node--defaulted {
+    fill: #ffffff !important;
+    stroke: #000000 !important;
+}
+
+.network-graph__node--target {
+    stroke: #ffffff;
+    stroke-width: 3px;
+    stroke-dasharray: 2 2;
+}
+
+.network-graph__label {
+    fill: #ffffff;
+    font-size: 9px;
+    text-anchor: middle;
+    font-family: monospace;
+}

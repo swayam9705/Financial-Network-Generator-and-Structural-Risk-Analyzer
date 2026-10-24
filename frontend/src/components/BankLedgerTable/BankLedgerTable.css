@@ -1,0 +1,81 @@
+.bank-ledger {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    border-top: 1px solid #ffffff;
+    height: 280px;
+}
+
+.bank-ledger__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.bank-ledger__title {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.bank-ledger__filters {
+    display: flex;
+    gap: 8px;
+}
+
+.bank-ledger__filter-btn {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 4px 8px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.bank-ledger__filter-btn--active {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.bank-ledger__table-wrapper {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.bank-ledger__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    text-align: left;
+}
+
+.bank-ledger__table th {
+    padding: 8px 16px;
+    border-bottom: 1px solid #444444;
+    color: #888888;
+    font-size: 9px;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+}
+
+.bank-ledger__table td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #222222;
+}
+
+.bank-ledger__row--defaulted {
+    background-color: #111111;
+}
+
+.bank-ledger__status--alert {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2px 6px;
+    font-weight: 700;
+}

@@ -1,0 +1,82 @@
+.controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    background-color: #000000;
+    border-right: 1px solid #ffffff;
+    width: 320px;
+    min-width: 320px;
+}
+
+.controls-panel__section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #444444;
+}
+
+.controls-panel__section:last-child {
+    border-bottom: none;
+}
+
+.controls-panel__title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.controls-panel__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.controls-panel__label {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #aaaaaa;
+}
+
+.controls-panel__input {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.controls-panel__range {
+    accent-color: #ffffff;
+    cursor: pointer;
+}
+
+.controls-panel__button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.2s ease;
+}
+
+.controls-panel__button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.controls-panel__button--alert {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.controls-panel__button--alert:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
