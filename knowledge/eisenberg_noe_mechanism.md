@@ -54,6 +54,8 @@ Martin Eisenberg and Larry Noe proved mathematically that this loop **will never
 * Which banks defaulted.
 * Exactly how much money flowed through the entire network during the crisis.
 
+If you want to know more, lets look at a mathematical problem [Link](./eisenberg_noe_mechanism_example.md)
+
 ---
 
 #### External Resources
