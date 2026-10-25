@@ -44,13 +44,13 @@ class FinancialNetworkSimulator:
             G.nodes[node]["type"] = 'Core' if is_core else "Periphery"
 
             # Core banks have higher initial capital and assets
-            G.nodes[node]["capital"] = np.random.uniform(500, 1000) if is_core else np.random.uniform(50, 150)
-            G.nodes[node]["external_assets"] = np.random.uniform(2000, 5000) if is_core else np.random.uniform(200, 600)
+            G.nodes[node]["capital"] = np.random.uniform(50, 150) if is_core else np.random.uniform(10, 30)
+            G.nodes[node]["external_assets"] = np.random.uniform(300, 700) if is_core else np.random.uniform(50, 120)
 
         for u, v in G.edges():
             # Core banks lend larger amounts
             is_core_edge = (u < self.num_core) and (v < self.num_core)
-            weight = np.random.uniform(100, 500) if is_core_edge else np.random.uniform(5, 50) 
+            weight = np.random.uniform(200, 800) if is_core_edge else np.random.uniform(30, 150) 
             G[u][v]["weight"] = weight
 
         return G
