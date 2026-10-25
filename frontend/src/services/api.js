@@ -1,6 +1,6 @@
 const API_BASE_URL = 'http://localhost:8000';
 
-export async function fetchGeneratedNetwork(numCore = 5, numPeriphery = 45, seed = 42) {
+export async function fetchGeneratedNetwork(numCore = 5, numPeriphery = 8, seed = 42) {
     const response = await fetch(`${API_BASE_URL}/api/generate-network`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

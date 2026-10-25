@@ -1,8 +1,8 @@
 .bank-ledger {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    border-top: 1px solid #ffffff;
+    background-color: var(--bg-base);
+    border-top: 1px solid var(--border-color);
     height: 280px;
 }
 
@@ -11,13 +11,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-surface);
 }
 
 .bank-ledger__title {
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: 800;
+    color: var(--text-main);
 }
 
 .bank-ledger__filters {
@@ -26,19 +28,21 @@
 }
 
 .bank-ledger__filter-btn {
-    background: #000000;
-    color: #ffffff;
-    border: 1px solid #444444;
+    background: var(--bg-base);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
     padding: 4px 8px;
     font-size: 9px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .bank-ledger__filter-btn--active {
-    border-color: #ffffff;
-    background-color: #ffffff;
-    color: #000000;
+    border-color: var(--text-main);
+    background-color: var(--text-main);
+    color: var(--bg-base);
+    font-weight: 700;
 }
 
 .bank-ledger__table-wrapper {
@@ -55,27 +59,32 @@
 
 .bank-ledger__table th {
     padding: 8px 16px;
-    border-bottom: 1px solid #444444;
-    color: #888888;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-muted);
     font-size: 9px;
     letter-spacing: 1px;
     position: sticky;
     top: 0;
-    background-color: #000000;
+    background-color: var(--bg-surface);
 }
 
 .bank-ledger__table td {
     padding: 8px 16px;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-main);
 }
 
 .bank-ledger__row--defaulted {
-    background-color: #111111;
+    background-color: var(--bg-surface);
+}
+
+.bank-ledger__status {
+    color: var(--text-muted);
 }
 
 .bank-ledger__status--alert {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--text-main);
+    color: var(--bg-base);
     padding: 2px 6px;
     font-weight: 700;
 }

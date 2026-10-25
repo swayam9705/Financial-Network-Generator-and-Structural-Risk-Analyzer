@@ -13,8 +13,8 @@ export function DashboardPage() {
     const [loading, setLoading] = useState(false);
 
     // Network State
-    const [numCore, setNumCore] = useState(5);
-    const [numPeriphery, setNumPeriphery] = useState(45);
+    const [numCore, setNumCore] = useState(3);
+    const [numPeriphery, setNumPeriphery] = useState(8);
     const [seed, setSeed] = useState(42);
     const [shockedBankId, setShockedBankId] = useState(0);
     const [shockMultiplier, setShockMultiplier] = useState(0.05);

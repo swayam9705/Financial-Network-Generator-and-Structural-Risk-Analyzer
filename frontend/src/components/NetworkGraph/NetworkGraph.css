@@ -1,10 +1,15 @@
 .network-graph {
     position: relative;
     flex: 1;
-    background-color: #000000;
-    border-right: 1px solid #ffffff;
+    background-color: var(--bg-base);
+    border-right: 1px solid var(--border-color);
     overflow: hidden;
     user-select: none;
+    cursor: grab;
+}
+
+.network-graph:active {
+    cursor: grabbing;
 }
 
 .network-graph__legend {
@@ -12,11 +17,13 @@
     top: 16px;
     left: 16px;
     display: flex;
+    align-items: center;
     gap: 16px;
-    background-color: #000000;
-    border: 1px solid #ffffff;
-    padding: 8px 12px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
     z-index: 10;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
 }
 
 .network-graph__legend-item {
@@ -25,25 +32,35 @@
     gap: 6px;
     font-size: 9px;
     letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.network-graph__hint {
+    font-size: 9px;
+    color: var(--accent-color);
+    border-left: 1px solid var(--border-color);
+    padding-left: 12px;
+    letter-spacing: 0.5px;
 }
 
 .network-graph__badge {
     width: 10px;
     height: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
 }
 
 .network-graph__badge--core {
-    background-color: #ffffff;
+    background-color: var(--text-main);
 }
 
 .network-graph__badge--periphery {
-    background-color: #000000;
+    background-color: var(--bg-surface);
 }
 
 .network-graph__badge--defaulted {
-    background-color: #ffffff;
-    outline: 2px solid #ffffff;
+    background-color: var(--accent-color);
+    outline: 2px solid var(--bg-base);
 }
 
 .network-graph__svg {
@@ -53,43 +70,41 @@
 }
 
 .network-graph__edge {
-    stroke: #333333;
-    stroke-width: 1px;
+    stroke: var(--border-color);
+    stroke-width: 1.2px;
 }
 
 .network-graph__node-group {
-    cursor: grab;
-}
-
-.network-graph__node-group:active {
-    cursor: grabbing;
+    cursor: pointer;
 }
 
 .network-graph__node {
-    fill: #000000;
-    stroke: #ffffff;
+    fill: var(--bg-surface);
+    stroke: var(--text-muted);
     stroke-width: 1.5px;
 }
 
 .network-graph__node--core {
-    fill: #222222;
+    fill: var(--bg-highlight);
+    stroke: var(--text-main);
     stroke-width: 2px;
 }
 
 .network-graph__node--defaulted {
-    fill: #ffffff !important;
-    stroke: #000000 !important;
+    fill: var(--accent-color) !important;
+    stroke: var(--bg-base) !important;
 }
 
 .network-graph__node--target {
-    stroke: #ffffff;
+    stroke: var(--accent-color);
     stroke-width: 3px;
-    stroke-dasharray: 2 2;
+    stroke-dasharray: 3 2;
 }
 
 .network-graph__label {
-    fill: #ffffff;
+    fill: var(--text-main);
     font-size: 9px;
     text-anchor: middle;
     font-family: monospace;
+    font-weight: 600;
 }

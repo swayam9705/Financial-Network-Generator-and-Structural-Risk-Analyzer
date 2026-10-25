@@ -3,8 +3,8 @@
     flex-direction: column;
     gap: 24px;
     padding: 20px;
-    background-color: #000000;
-    border-right: 1px solid #ffffff;
+    background-color: var(--bg-base);
+    border-right: 1px solid var(--border-color);
     width: 320px;
     min-width: 320px;
 }
@@ -14,7 +14,7 @@
     flex-direction: column;
     gap: 12px;
     padding-bottom: 20px;
-    border-bottom: 1px dashed #444444;
+    border-bottom: 1px dashed var(--border-color);
 }
 
 .controls-panel__section:last-child {
@@ -25,7 +25,7 @@
     font-size: 11px;
     letter-spacing: 1.5px;
     font-weight: 800;
-    color: #ffffff;
+    color: var(--text-main);
 }
 
 .controls-panel__group {
@@ -37,26 +37,26 @@
 .controls-panel__label {
     font-size: 9px;
     letter-spacing: 1px;
-    color: #aaaaaa;
+    color: var(--text-muted);
 }
 
 .controls-panel__input {
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
     padding: 8px;
     font-size: 12px;
 }
 
 .controls-panel__range {
-    accent-color: #ffffff;
+    accent-color: var(--text-main);
     cursor: pointer;
 }
 
 .controls-panel__button {
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
     padding: 10px;
     font-size: 11px;
     letter-spacing: 1px;
@@ -67,16 +67,17 @@
 }
 
 .controls-panel__button:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--text-main);
+    color: var(--bg-base);
 }
 
 .controls-panel__button--alert {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--text-main);
+    color: var(--bg-base);
+    border-color: var(--text-main);
 }
 
 .controls-panel__button--alert:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--bg-surface);
+    color: var(--text-main);
 }

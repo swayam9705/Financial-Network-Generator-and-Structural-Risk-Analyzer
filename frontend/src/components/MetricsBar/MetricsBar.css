@@ -1,15 +1,16 @@
 .metrics-bar {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border-bottom: 1px solid #ffffff;
-    background-color: #000000;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-base);
 }
 
 .metrics-bar__item {
     display: flex;
     flex-direction: column;
     padding: 12px 16px;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--bg-base);
 }
 
 .metrics-bar__item:last-child {
@@ -19,7 +20,7 @@
 .metrics-bar__label {
     font-size: 9px;
     letter-spacing: 1px;
-    color: #888888;
+    color: var(--text-muted);
     margin-bottom: 4px;
 }
 
@@ -27,17 +28,22 @@
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
+    color: var(--text-main);
 }
 
 .metrics-bar__item--highlight {
-    background-color: #111111;
+    background-color: var(--bg-surface);
 }
 
 .metrics-bar__item--alert {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--text-main);
+    color: var(--bg-base);
 }
 
 .metrics-bar__item--alert .metrics-bar__label {
-    color: #444444;
+    color: var(--bg-surface);
+}
+
+.metrics-bar__item--alert .metrics-bar__value {
+    color: var(--bg-base);
 }

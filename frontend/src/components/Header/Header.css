@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
-    background-color: #000000;
-    border-bottom: 2px solid #ffffff;
+    background-color: var(--bg-base);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .header__branding {
@@ -15,19 +15,22 @@
 
 .header__symbol {
     font-size: 18px;
+    color: var(--text-main);
 }
 
 .header__title {
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: 800;
+    color: var(--text-main);
 }
 
 .header__tag {
     font-size: 10px;
     padding: 2px 6px;
-    border: 1px solid #ffffff;
-    color: #a0a0a0;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    background-color: var(--bg-surface);
 }
 
 .header__controls {
@@ -45,39 +48,41 @@
 .header__indicator {
     width: 8px;
     height: 8px;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--text-main);
 }
 
 .header__indicator--active {
-    background-color: #ffffff;
+    background-color: var(--text-main);
 }
 
 .header__indicator--offline {
-    background-color: #000000;
+    background-color: var(--bg-base);
 }
 
 .header__status-text {
     font-size: 11px;
     letter-spacing: 1px;
+    color: var(--text-muted);
 }
 
 .header__toggle-group {
     display: flex;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--border-color);
 }
 
 .header__toggle-btn {
-    background: #000000;
-    color: #ffffff;
+    background: var(--bg-base);
+    color: var(--text-muted);
     border: none;
     padding: 6px 14px;
     font-size: 10px;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .header__toggle-btn--selected {
-    background: #ffffff;
-    color: #000000;
+    background: var(--text-main);
+    color: var(--bg-base);
     font-weight: 700;
 }
