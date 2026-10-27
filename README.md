@@ -9,27 +9,7 @@ Inspired by structural network science and quantitative risk research, this syst
 ## 🏗️ System Design Architecture
 
 The application is structured into a modular pipeline mirroring core mathematical operations down to the user interface:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    SYSTEM ARCHITECTURE                      │
-├─────────────────────────────────────────────────────────────┤
-│  [1. Simulation & Math Engine (models_analysis/)]           │
-│      ├── Stochastic Block Model (Core-Periphery Graph)      │
-│      ├── Eisenberg-Noe Fixed-Point Clearing Solver          │
-│      └── Graph Laplacian & Centrality Feature Extraction    │
-├─────────────────────────────────────────────────────────────┤
-│  [2. REST API Service (backend/)]                           │
-│      ├── POST /api/generate-network                         │
-│      └── POST /api/simulate-shock                           │
-├─────────────────────────────────────────────────────────────┤
-│  [3. Institutional Dashboard (frontend/)]                   │
-│      ├── Standalone Fallback Engine (Client-Side JS)        │
-│      ├── Interactive SVG Canvas (Draggable Node Graph)      │
-│      ├── Stress Test Injector Panel                         │
-│      └── Real-Time Bank Clearing Ledger Table               │
-└─────────────────────────────────────────────────────────────┘
-```
+![System Design Architecture](./images/system_design.svg)
 
 ### Concepts Workflow Map
 Below is the system design architecture flow matching the foundational mathematical concepts of the platform:
@@ -150,3 +130,13 @@ cd <project_folder>/frontend
 npm install
 npm run dev
 ```
+
+#### Resources Used
+1. Wikipedia page on Stochastic Block Model: https://en.wikipedia.org/wiki/Stochastic_block_model
+2. Youtube video by Lauren Hyoseo Yoon on SBM: https://www.youtube.com/watch?v=5cYBLy5Usls
+3. Wikipedia article on Core-Periphery Structure: https://en.wikipedia.org/wiki/Core%E2%80%93periphery_structure
+4. Youtube video by Dr. Yayati on core-periphery structure: https://www.youtube.com/watch?v=wzreq11YkKk
+5. Medium article on the "Core-Periphery Model": https://medium.com/@oleksandr.shemetov/the-core-periphery-model-b193662ae360
+6. PageRank Algorithm: https://www.geeksforgeeks.org/python/page-rank-algorithm-implementation/
+7. Wolfram article on Tarski's Fixed-point Theorem: https://mathworld.wolfram.com/TarskisFixedPointTheorem.html
+8. Youtube video by "The Margin Call" on Fixed-point Theorem: https://www.youtube.com/watch?v=fawRyIks3T8
