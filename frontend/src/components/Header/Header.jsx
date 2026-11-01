@@ -6,8 +6,7 @@ export function Header({ mode, setMode, isBackendConnected }) {
         <header className="header">
             <div className="header__branding">
                 <span className="header__symbol">▲</span>
-                <h1 className="header__title">DEEPSYSTEMIC</h1>
-                <span className="header__tag">v1.0.0</span>
+                <h1 className="header__title">DEEP SYSTEMIC</h1>
             </div>
 
             <div className="header__controls">

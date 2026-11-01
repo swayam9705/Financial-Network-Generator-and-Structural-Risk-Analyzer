@@ -95,6 +95,10 @@ export function NetworkGraph({ nodes, edges, defaultedIds, shockedBankId, onSele
                 <div className="network-graph__legend-item">
                     <span className="network-graph__badge network-graph__badge--defaulted" /> DEFAULTED
                 </div>
+                <div className="network-graph__legend-item">
+                    <span className="network-graph__badge network-graph__badge--healthy" />
+                    HEALTHY
+                </div>
                 <div className="network-graph__hint">💡 Tip: Drag background to pan map</div>
             </div>
 
@@ -140,7 +144,9 @@ export function NetworkGraph({ nodes, edges, defaultedIds, shockedBankId, onSele
 
                         let nodeClass = 'network-graph__node';
                         if (isCore) nodeClass += ' network-graph__node--core';
-                        if (isDefaulted) nodeClass += ' network-graph__node--defaulted';
+                        if (isDefaulted) {
+                            nodeClass += ' network-graph__node--defaulted'
+                        }
                         if (isShockedTarget) nodeClass += ' network-graph__node--target';
 
                         return (

@@ -9,6 +9,20 @@
 
 	--border-color: #30363d;
 	--border-subtle: #21262d;
+
+	/* bank badge colors */
+	--bg-core-bank: white;
+	--border-core-bank: grey;
+
+	--bg-periphery-bank: grey;
+	--border-periphery-bank: darkgrey;
+	
+	--bg-defaulted-bank: #a53131;
+	--border-defaulted-bank: red;
+
+	--bg-healthy-bank: green;
+	--border-healthy-bank: lightgreen;
+
 }
 
 * {

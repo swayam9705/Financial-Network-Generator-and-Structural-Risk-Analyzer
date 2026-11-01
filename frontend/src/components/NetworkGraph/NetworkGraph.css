@@ -51,16 +51,19 @@
 }
 
 .network-graph__badge--core {
-    background-color: var(--text-main);
+    background-color: var(--bg-core-bank);
 }
 
 .network-graph__badge--periphery {
-    background-color: var(--bg-surface);
+    background-color: var(--bg-periphery-bank);
 }
 
 .network-graph__badge--defaulted {
-    background-color: var(--accent-color);
-    outline: 2px solid var(--bg-base);
+    background-color: var(--bg-defaulted-bank);
+}
+
+.network-graph__badge--healthy {
+    background-color: var(--bg-healthy-bank);
 }
 
 .network-graph__svg {
@@ -80,19 +83,18 @@
 
 .network-graph__node {
     fill: var(--bg-surface);
-    stroke: var(--text-muted);
-    stroke-width: 1.5px;
 }
 
 .network-graph__node--core {
-    fill: var(--bg-highlight);
-    stroke: var(--text-main);
-    stroke-width: 2px;
+    fill: var(--bg-core-bank);
 }
 
 .network-graph__node--defaulted {
-    fill: var(--accent-color) !important;
-    stroke: var(--bg-base) !important;
+    fill: var(--bg-defaulted-bank);
+}
+
+.network-graph__node--healthy {
+    fill: var(--bg-healthy-bank);
 }
 
 .network-graph__node--target {
