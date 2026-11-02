@@ -1,5 +1,5 @@
 const API_BASE_URL = process.env.NODE_ENV === "production"
-    ? "https://deepsystemic-risk-backend.onrender.com/"
+    ? "https://deepsystemic-risk-backend.onrender.com"
     : "http://localhost:8000"
 
 export async function fetchGeneratedNetwork(numCore = 5, numPeriphery = 8, seed = 42) {
